@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            background-image: url("watch.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            border-image: url("watch.jpg");
+
+        }
+       
+        button {
+            font-size: 1em;
+            padding: 5px 10px;
+            margin: 0 10px;
+            cursor: pointer;
+            background-color: #111111;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            outline: none;
+            
+        }
+
+        #count {
+            font-size: 3em;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px;
+            border: 40px solid #333;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            margin: 5px;
+
+        }
+
+        table {
+            background-color: #111111;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            font-size: 1rlh;
+            color: #fff;
+            margin-top: 10px;
+
+        }
+        table,th,td{
+            width: 100%;
+            border: 2px solid #333;
+
+        }
+        .c{
+           padding-left: 25px;
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="b">
+       
+        <div class="a">
+            <div id="count">00:00:00</div><br>
+            
+            <div class="c">
+                <button onclick="start()">start</button>
+                <button onclick="stop()">stop</button>
+                <button onclick="reset()">reset</button>
+            </div><br>
+            <div class="a">
+                <input type="text" id="taskInput" placeholder="Enter task">
+                <button onclick="addTask()">Add Task</button>
+            </div>
+        </div>
+        <table id="taskTable">
+           
+            <tr>
+                <th>S.No</th>
+                <th>Event</th>
+                <th>Time</th>
+            </tr>
+        </table>
+    </div>
+ <script src="./cse.js"></script>
+</body>
+
+</html>
